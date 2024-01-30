@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+                                   "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+ <definition name="mainpage.layout" path="/mainroot.jsp">
+  <put name="header" value="header.jsp"/>
+  <put name="headertop" value="header-top.jsp"/>
+  <put name="headermenu" value="header-menu.jsp"/>
+  <put name="bodytop" value="body-top.jsp"/>
+  <put name="bodybottom" value="body-bottom.jsp"/>
+  <put name="footer" value="footer.jsp"/>
+  <put name="body" value="empty.jsp"/>
+ </definition>
+ 
+ <definition extends="mainpage.layout" name="featureMaster">
+  <put name="body" value="featureMaster.jsp"/>
+ </definition>
+ 
+<definition extends="mainpage.layout" name="featureTypeMaster">
+  <put name="body" value="featureTypeMaster.jsp"/>
+ </definition>
+ 
+ 
+<definition extends="mainpage.layout" name="category">
+  <put name="body" value="category.jsp"/>
+ </definition>
+ 
+ <definition extends="mainpage.layout" name="brandMaster">
+  <put name="body" value="brandMaster.jsp"/>
+ </definition>
+ 
+ <definition extends="mainpage.layout" name="productMaster">
+  <put name="body" value="productMaster.jsp"/>
+ </definition>
+ 
+ </tiles-definitions>

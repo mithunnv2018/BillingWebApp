@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+   <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+  <property name="hibernate.c3p0.acquire_increment">2</property>
+  <property name="hibernate.c3p0.idle_test_period">3600</property>
+  <property name="hibernate.c3p0.max_size">10</property>
+  <property name="hibernate.c3p0.max_statements">0</property>
+  <property name="hibernate.c3p0.min_size">2</property>
+  <property name="hibernate.c3p0.timeout">5000</property>
+   <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+   <property name="hibernate.search.autoregister_listeners">false</property>
+ 
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <!-- <property name="hibernate.connection.password">pass</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/billingwebapp</property>
+  <property name="hibernate.connection.username">root</property> -->
+  <property name="hibernate.connection.password">pass123</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/admin_billingwebapp</property>
+  <property name="hibernate.connection.username">admin3</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <mapping resource="com/billingwebapp/domain/TblFeatureMaster.hbm.xml"/>
+  <mapping resource="com/billingwebapp/domain/TblFeatureTypeMaster.hbm.xml"/>
+  <mapping resource="com/billingwebapp/domain/TblCategoryMaster.hbm.xml"/>
+  <mapping resource="com/billingwebapp/domain/TblBrandMaster.hbm.xml"/>
+  <mapping resource="com/billingwebapp/domain/TblProductFeatures.hbm.xml"/>
+  <mapping resource="com/billingwebapp/domain/TblProductInventory.hbm.xml"/>
+  <mapping resource="com/billingwebapp/domain/TblRunningId.hbm.xml"/>
+  <mapping resource="com/billingwebapp/domain/TblProductMaster.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

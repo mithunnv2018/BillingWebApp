@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 13, 2015 2:39:58 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.billingwebapp.domain.TblProductMaster" table="tbl_product_master" >
+        <id name="productId" type="string">
+            <column name="product_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="productName" type="string">
+            <column name="product_name" not-null="true" />
+        </property>
+        <property name="brandId" type="int">
+            <column name="brand_id" not-null="true" />
+        </property>
+        <property name="productAliasname" type="string">
+            <column name="product_aliasname" not-null="true" />
+        </property>
+        <property name="productImage" type="string">
+            <column name="product_image" length="500" not-null="true" />
+        </property>
+        <property name="productInventory" type="int">
+            <column name="product_inventory" not-null="true" />
+        </property>
+        <property name="productImageName" type="string">
+            <column name="product_image_name" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

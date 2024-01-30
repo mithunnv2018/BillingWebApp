@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 13, 2015 2:39:58 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.billingwebapp.domain.TblCategoryMaster" table="tbl_category_master" >
+        <id name="categoryId" type="java.lang.Integer">
+            <column name="category_id" />
+            <generator class="identity" />
+        </id>
+        <property name="categoryName" type="string">
+            <column name="category_name" not-null="true" />
+        </property>
+        <property name="categoryAliasname" type="string">
+            <column name="category_aliasname" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
